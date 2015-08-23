@@ -2,9 +2,9 @@
 ##     makeCacheMatrix: creates a special "matrix" object that can
 ##                      cache its inverse.
 ##     cacheSolve: returns the inverse of a matrix; if this inverse
-##                 has already been calculated and stored (cashed)
-##                 then the cashed inverse is returned; if no
-##                 inverse has been cashed yet, this function
+##                 has already been calculated and stored (cached)
+##                 then the cached inverse is returned; if no
+##                 inverse has been cached yet, this function
 ##                 calculates the inverse from scratch and caches
 ##                 it for future use.
 
@@ -64,6 +64,6 @@ cacheSolve <- function(x, ...) {
     inverseMatrix <- solve(origMatrix)
     x$setInverse(inverseMatrix)
     
-        ## Return a matrix that is the inverse of 'x'
+    ## Return a matrix that is the inverse of 'x'
     inverseMatrix
 }
