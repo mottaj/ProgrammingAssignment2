@@ -55,9 +55,8 @@ cacheSolve(cachedA)
 # [2,]   -1    1    0
 # [3,]   -1    0    1
 
-# Check whether the inverse matrix has been stored
+# Check whether the inverse matrix has been stored:
 cachedA$getInverse()
-> cachedA$getInverse()
 #      [,1] [,2] [,3]
 # [1,]    7   -3   -3
 # [2,]   -1    1    0
